@@ -281,6 +281,9 @@ hr {
   text-shadow: 1px #ede1e4;
   padding: 3rem 3rem 2rem 0rem;
 }
+.footer2 #footer_hr {
+  margin-top: 1rem;
+}
 .footer2 ul {
   display: flex;
   flex-direction: row;
