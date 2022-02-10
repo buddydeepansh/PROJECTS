@@ -214,7 +214,7 @@ hr {
 }
 .card1 {
   padding: 2.5rem 0 0 1.5rem;
-  background-image: url("/ADOBE CLONE/images/img1.jpg");
+  background-image: url("../images/img1.jpg");
   cursor: pointer;
   height: 525px;
   width: 28%;
@@ -224,7 +224,7 @@ hr {
 }
 .card2 {
   padding: 2.5rem 0 0 1.5rem;
-  background-image: url("/ADOBE CLONE/images/img2.webp");
+  background-image: url("../images/img2.webp");
   cursor: pointer;
   height: 525px;
   width: 28%;
@@ -233,7 +233,7 @@ hr {
   background-repeat: no-repeat;
 }
 .card3 {
-  background-image: url("/ADOBE CLONE/images/img3.png");
+  background-image: url("../images/img3.png");
   height: 525px;
   width: 28%;
   background-position: center;
