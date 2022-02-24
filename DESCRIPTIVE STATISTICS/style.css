@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  padding: 1rem 10vw;
+  background-color: aquamarine;
+  border: 1px solid black;
+}
+p {
+  text-align: justify;
+}
+.paddingg {
+  margin: 1rem 0;
+}
+#form-1 {
+  /* background-color: aqua; */
+  width: 100%;
+}
+#para-two {
+  font-size: 1.2rem;
+  line-height: 2;
+  /* padding-left: 1rem; */
+  background-color: beige;
+  width: 100%;
+}

@@ -7,36 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div class="container">
-        <form id="form" class="form">
+        <form id="form" class="form" method="get">
             <h2>Register with Us</h2>
             <div class="form-control">
                 <label for="username">User Name:</label>
-                <input placeholder="Enter User Name" type="text" name="" id="username">
+                <input placeholder="Enter User Name" type="text" name="" id="username" />
                 <small>Error Message</small>
             </div>
             <div class="form-control">
                 <label for="useremail">User Email:</label>
-                <input placeholder="Enter User Email" type="text" name="" id="useremail">
+                <input placeholder="Enter User Email" type="text" name="" id="useremail" />
                 <small>Error Message</small>
             </div>
             <div class="form-control">
                 <label for="password">Password:</label>
-                <input placeholder="Enter password" type="password" name="" id="password">
+                <input placeholder="Enter password" type="password" name="" id="password" />
                 <small>Error Message</small>
             </div>
             <div class="form-control">
                 <label for="password2">Confirm Password:</label>
-                <input placeholder="ReType Password" type="password" name="" id="password2">
+                <input placeholder="ReType Password" type="password" name="" id="password2" />
                 <small>Error Message</small>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="checkk();">Submit</button>
         </form>
     </div>
-    <script src="style.js" type="text/javascript"></script>
 </body>
 
 </html>
