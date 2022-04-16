@@ -1,0 +1,30 @@
+body {
+  background-color: #f8bbd0;
+}
+table {
+  background-color: #c2185b;
+  margin: 25vh auto 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 1px 1px white;
+  text-align: center;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  background-color: #f8bbd0;
+  border-radius: 5px;
+  border: 0;
+  width: 3rem;
+}
+button#clearr {
+  width: 100%;
+}
+input {
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: beige;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
