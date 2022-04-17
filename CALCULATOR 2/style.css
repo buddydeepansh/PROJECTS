@@ -17,14 +17,23 @@ button {
   border-radius: 5px;
   border: 0;
   width: 3rem;
+  outline: none;
 }
+
 button#clearr {
   width: 100%;
 }
+
 input {
   max-width: 100%;
   padding: 0.5rem 1rem;
   background-color: beige;
   font-size: 1.2rem;
   font-weight: 700;
+}
+.purple {
+  background-color: rgba(0, 0, 255, 0.349);
+}
+.red {
+  background-color: rgba(255, 57, 7, 0.781);
 }

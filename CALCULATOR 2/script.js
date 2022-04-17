@@ -1,18 +1,24 @@
 var n1 = "",
   n2 = "",
   n3 = "",
-  n4 = "";
+  n4 = "",
+  n5 = "0";
 var input = document.getElementById("input");
 function display(n3) {
+  document.getElementById(n5).classList.remove("purple");
+  console.log(n3);
+  document.getElementById(n3).classList.add("purple");
   n4 = n1;
   n1 = n1 + n3;
   input.setAttribute("value", n1);
+  n5 = n3;
 }
 function clearr() {
   input.setAttribute("value", "");
   n1 = "";
   n2 = "";
   n3 = "";
+  document.getElementById(n5).classList.remove("purple");
 }
 function calc() {
   if (n1 == "") {
@@ -41,5 +47,6 @@ document.addEventListener("keydown", function (k) {
     nl = n1.length;
     nl--;
     input.setAttribute("value", (n1 = n1.slice(0, nl)));
+    document.getElementById(n5).classList.remove("purple");
   }
 });
