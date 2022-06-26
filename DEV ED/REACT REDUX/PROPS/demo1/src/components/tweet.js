@@ -5,7 +5,7 @@ function Tweet(props) {
     return (
         <>
             <h2>Name: {props.name}</h2>
-            <h3>Message: {props.message}</h3>
+            <h3>Message: {props.tweets}</h3>
             <button>Delete</button>
             <button>Like</button>
         </>
