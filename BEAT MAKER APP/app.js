@@ -16,9 +16,13 @@ class DrumKit {
     this.muteBtns = document.querySelectorAll(".mute");
     this.tempoSlider = document.querySelector(".tempo-slider");
   }
+
+  //adding animation to slected active pads.
   activePad() {
     this.classList.toggle("active");
   }
+
+  //creating a loop which will run until start/stop is pressed.
   repeater() {
     let step = this.index % 8;
     const activeBars = document.querySelectorAll(`.b${step}`);
@@ -41,6 +45,8 @@ class DrumKit {
     });
     this.index++;
   }
+
+  //starting with a basic tempo
   start() {
     const interval = (60 / this.bpm) * 1000;
     if (!this.isPlaying) {
@@ -52,6 +58,8 @@ class DrumKit {
       this.isPlaying = null;
     }
   }
+
+  //start stop button animation only toggler
   updateButton() {
     if (this.isPlaying) {
       this.playButton.innerText = "STOP";
@@ -61,6 +69,8 @@ class DrumKit {
       this.playButton.classList.remove("active");
     }
   }
+
+  //change the selected sounds from select menu of tracks
   changeSound(e) {
     const selectionValue = e.target.value;
     const selectionName = e.target.name;
@@ -76,6 +86,8 @@ class DrumKit {
         break;
     }
   }
+
+  //mute/unmute a particuler sound
   mute(e) {
     const muteIndex = e.target.getAttribute("data-track");
     console.log(muteIndex);
@@ -107,11 +119,13 @@ class DrumKit {
       }
     }
   }
+
   changeTempo(e) {
     console.log(e);
     const tempoText = document.querySelector(".tempo-number");
     tempoText.innerText = e.target.value;
   }
+
   updateTempo(e) {
     this.bpm = e.target.value;
     clearInterval(this.isPlaying);
@@ -122,32 +136,41 @@ class DrumKit {
     }
   }
 }
+
+//creating new Object
 const drumkit = new DrumKit();
 
+// creating animation for clicking on pads.
 drumkit.pads.forEach((pad) => {
   pad.addEventListener("click", drumkit.activePad);
+
+  //removing animation from pads
   pad.addEventListener("animationend", function () {
     this.style.animation = "";
   });
 });
 
+//start/stop button event listner
 drumkit.playButton.addEventListener("click", function () {
   drumkit.start();
   drumkit.updateButton();
 });
 
+//tune changer options event listner
 drumkit.selects.forEach((select) => {
   select.addEventListener("change", function (e) {
     drumkit.changeSound(e);
   });
 });
 
+//mute button toggles event listner
 drumkit.muteBtns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     drumkit.mute(e);
   });
 });
 
+//tempo change event listners
 drumkit.tempoSlider.addEventListener("input", function (e) {
   drumkit.changeTempo(e);
 });
