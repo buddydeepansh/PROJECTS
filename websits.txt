@@ -1,3 +1,7 @@
+font-awesome
+<script src="https://kit.fontawesome.com/5141db5719.js" crossorigin="anonymous"></script>
+
+
 ui-patterns.com
 dribble.com
 sneakpeekit.com
