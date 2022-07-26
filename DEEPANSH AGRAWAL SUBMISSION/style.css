@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(32, 121, 9, 1) 0%,
+    rgba(0, 212, 255, 1) 89%
+  );
+  height: 100vh;
+}
+.carousel-inner {
+  width: 80vw;
+}
+.carousel-item {
+  height: 80vh;
+  width: 90vw;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+button span {
+  background-color: rgba(0, 0, 0, 0.473);
+}
+.table_one {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(215, 245, 132);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table_one h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.table_one input[type="text"] {
+  color: blue;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  border-radius: 1rem;
+}
+table {
+  width: 80% !important;
+  border-radius: 10px;
+  border: none;
+}
+.table1 tr {
+  border: 2px solid black;
+}
+.table1 tr td {
+  /* background-color: aqua; */
+  padding: 1rem;
+  background-color: rgba(127, 255, 212, 0.486);
+  border-right: 2px solid black;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 2rem;
+}
+.table1 tr th {
+  border-right: 2px solid black;
+  /* background-color: aqua; */
+  padding: 1.1rem;
+  text-align: center;
+  background-color: aquamarine;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card {
+  height: max-content;
+  background-color: rgba(250, 235, 215, 0.212);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card .card-body {
+  background-color: rgb(250, 235, 215);
+  display: inline;
+  max-width: 300px;
+  /* background-color: aqua; */
+  border: 2px solid black;
+  height: 300px;
+  margin: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.card .card-body:hover {
+  transform: scale(1.1);
+}
+.card-title {
+  font-size: 1.3rem;
+  text-align: left;
+}
+.card-body {
+  text-align: justify;
+}
+
+.submit_form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit_form form {
+  height: 70%;
+  width: 70%;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit_form form input,
+.submit_form form textarea {
+  width: 50%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+}
+.submit_form form label {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+  margin-top: 1rem;
+}
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.checkboxes input {
+  margin-bottom: -1rem;
+}
+
+.checkboxes span {
+  margin-left: 3rem;
+}

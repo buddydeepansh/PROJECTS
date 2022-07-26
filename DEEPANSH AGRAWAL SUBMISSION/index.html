@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/pexels-designecologist-1779487.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/pexels-eduardo-dutra-2115217.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/pexels-josh-sorenson-1714208.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="table_one">
+        <h2>My Customers</h2>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Customer" title="Type in a name">
+        <table class="table1 table table-striped table-hover" id="table1">
+            <tr class="headings">
+                <th>Name</th>
+                <th>Client</th>
+            </tr>
+            <tr>
+                <td>XYZ</td>
+                <td>PQR</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+            </tr>
+            <tr>
+                <td>
+                    ABC
+                </td>
+                <td>CCC</td>
+            </tr>
+            <tr>
+                <td>HELLO</td>
+                <td>DE</td>
+            </tr>
+            <tr>
+                <td>DE</td>
+                <td>Pronto</td>
+            </tr>
+        </table>
+    </div>
+    <div class="card"></div>
+    <div class="submit_form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="date">Date::</label>
+            <input type="date" id="date">
+            <label for="feedback_title">Feedback Title:</label>
+            <input type="text" id="feedback_title">
+            <label for="feedback_body">Feedback:</label>
+            <textarea name="feedback" id="feedback_body" cols="50" rows="3"></textarea>
+            <div class="checkboxes">
+                <label>DEPARTMENT</label>
+                <input id="box1" type="checkbox" value="CS" />
+                <label for="box1"> CS</label>
+                <input id="box2" type="checkbox" value="IT" />
+                <label for="box2"> IT</label>
+                <input id="box3" type="checkbox" value="ME" />
+                <label for="box3"> ME</label>
+            </div>
+            <button id="submit_btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
