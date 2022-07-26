@@ -54,6 +54,7 @@ function logged(e) {
   const feedback1 = document.querySelector("#feedback_title");
   const feedback2 = document.querySelector("#feedback_body");
   const ticks = document.querySelectorAll(`input[type="checkbox"]`);
+  const radios = document.querySelectorAll(`input[type="radio"]`);
   console.log(`name: ${name.value}`);
   console.log(`Date: ${date.value}`);
   console.log(`Feedback Title: ${feedback1.value}`);
@@ -61,6 +62,11 @@ function logged(e) {
   ticks.forEach((tick) => {
     if (tick.checked) {
       console.log(tick.value);
+    }
+  });
+  radios.forEach((radio) => {
+    if (radio.checked) {
+      console.log(`Gender:  ${radio.value}`);
     }
   });
 }

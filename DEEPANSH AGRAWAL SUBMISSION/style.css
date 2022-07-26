@@ -139,17 +139,25 @@ table {
   margin-bottom: 0.1rem;
   margin-top: 1rem;
 }
-.checkboxes {
+.checkboxes,.radios {
   display: flex;
   flex-direction: row;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
-.checkboxes input {
+.checkboxes input,.radios input {
   margin-bottom: -1rem;
 }
 
-.checkboxes span {
-  margin-left: 3rem;
+#submit_btn {
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.6rem 5rem;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  margin: 1rem;
 }
