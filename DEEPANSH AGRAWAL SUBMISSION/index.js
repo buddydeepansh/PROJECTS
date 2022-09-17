@@ -6,16 +6,18 @@ function getCards() {
   fetch("https://jsonplaceholder.typicode.com/posts")
     .then((res) => res.json())
     .then((data) => {
-      let count = 0;
-      data.forEach((element) => {
-        if (count === 7) {
-          return;
-        }
-        count++;
+      const data_nine = data.filter((element) => {
+        return element.id % 9 == 0;
+      });
+      const data_nine_not = data.filter((element) => {
+        return element.id % 9 != 0;
+      });
+      console.log(data_nine);
+      data_nine_not.forEach((element) => {
         const card = document.createElement("div");
         const heading1 = document.createElement("h5");
         const para = document.createElement("p");
-        heading1.innerText = `Title : ${element.title}`;
+        heading1.innerText = `Title : ${element.id}  ${element.title}`;
         para.innerText = `Body : ${element.body}`;
         card.classList.add("card-body");
         heading1.classList.add("card-title");
@@ -23,6 +25,19 @@ function getCards() {
         card.appendChild(heading1);
         card.appendChild(para);
         cards.appendChild(card);
+        if (element.id % 2 == 0) {
+          card.classList.add("green");
+        } else {
+          card.classList.add("red");
+        }
+        if (
+          element.title ==
+          "asperiores ea ipsam voluptatibus modi minima quia sint"
+        ) {
+          card.classList.remove("red");
+          card.classList.remove("green");
+          card.classList.add("yellow");
+        }
       });
     });
 }

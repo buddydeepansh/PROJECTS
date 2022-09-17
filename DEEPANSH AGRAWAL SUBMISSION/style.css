@@ -139,14 +139,16 @@ table {
   margin-bottom: 0.1rem;
   margin-top: 1rem;
 }
-.checkboxes,.radios {
+.checkboxes,
+.radios {
   display: flex;
   flex-direction: row;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
-.checkboxes input,.radios input {
+.checkboxes input,
+.radios input {
   margin-bottom: -1rem;
 }
 
@@ -160,4 +162,13 @@ table {
   border-radius: 10px;
   letter-spacing: 2px;
   margin: 1rem;
+}
+.red {
+  background-color: red !important;
+}
+.green {
+  background-color: green !important;
+}
+.yellow {
+  background-color: yellow !important;
 }
