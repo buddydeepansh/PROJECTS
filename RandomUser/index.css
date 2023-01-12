@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container {
+  display: flex;
+  background-color: #aeadf0;
+  box-shadow: 3px 3px 6px #928484;
+  width: 50%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  border-radius: 20px;
+}
+.initialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  flex-direction: column;
+}
+.firstName {
+  font: normal normal 600 16px/20px "Mulish";
+  text-transform: capitalize;
+  color: #23231a;
+}
+.userImage {
+  border-radius: 30px;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.btnContainer button {
+  background: transparent;
+  border: 1px solid grey;
+  box-shadow: 0px 1px 3px grey;
+  outline: none;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  vertical-align: middle;
+  font: normal normal 600 16px/20px "Mulish";
+  text-transform: capitalize;
+  color: #23231a;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.additionalDetails {
+  font: normal normal 600 16px/20px "Mulish";
+  color: #23231a;
+}
+@media screen and (max-width: 950px) {
+  .Container {
+    height: 90%;
+  }
+  .btnContainer {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

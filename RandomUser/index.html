@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="initialContainer">
+        <p id="name" class="firstName"></p>
+        <img src="" alt="user" class="userImage" id="userImage" />
+      </div>
+      <div class="btnContainer">
+        <button data-attr="age" onclick="displayAge()">Age</button>
+        <button data-attr="email" onclick="displayEmail()">Email</button>
+        <button data-attr="phone" onclick="displayPhone()">Phone</button>
+        <button onclick="newUser()">New User</button>
+      </div>
+      <div class="AdditionalContainer">
+        <p class="additionalDetails"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
