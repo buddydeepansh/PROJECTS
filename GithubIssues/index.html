@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Issues Tracker</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container dFlex">
+    <p>Github Issue List</p>
+    <ol class="List dFlex" type="1"></ol>
+    <div class="btnContainer dFlex">
+      <button id="load_prev" onclick="prevPage()">Previous Page</button>
+      <p id="currentPage">Page 1</p>
+      <button id="load_next" onclick="nextPage()">Next Page</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
