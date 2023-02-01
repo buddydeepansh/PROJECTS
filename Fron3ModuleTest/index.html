@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo Location Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>TimeZone API</h2>
+      <h4>YOUR CURRENT TIME ZONE:</h4>
+      <div class="currentzonecontainer">
+        <div class="name">
+          <h4>Name of Time Zone:</h4>
+          <h4 id="name"></h4>
+        </div>
+        <div class="latlong">
+          <div class="lat">
+            <h4>Latitude of Time Zone:</h4>
+            <h4 id="lat"></h4>
+          </div>
+          <div class="long">
+            <h4>Longitude of Time Zone:</h4>
+            <h4 id="long"></h4>
+          </div>
+        </div>
+        <div class="std">
+          <h4>Offset STD:</h4>
+          <h4 id="std"></h4>
+        </div>
+        <div class="stdsec">
+          <h4>Offset STD seconds:</h4>
+          <h4 id="stdsec"></h4>
+        </div>
+        <div class="dst">
+          <h4>Offset DST:</h4>
+          <h4 id="dst"></h4>
+        </div>
+        <div class="dstsec">
+          <h4>Offset DST seconds:</h4>
+          <h4 id="dstsec"></h4>
+        </div>
+        <div class="country">
+          <h4>Country:</h4>
+          <h4 id="country"></h4>
+        </div>
+        <div class="postcode">
+          <h4>State Code (post code not available in api):</h4>
+          <h4 id="postcode"></h4>
+        </div>
+        <div class="city">
+          <h4>City:</h4>
+          <h4 id="city"></h4>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <label for="adress">Enter Adress:</label>
+      <textarea
+        name="address"
+        id="address"
+        cols="20"
+        rows="2"
+        draggable="false"
+      ></textarea>
+      <button onclick="searchResults()">Search</button>
+      <div class="currentzonecontainer2">
+        <div class="name2">
+          <h4>Name of Time Zone:</h4>
+          <h4 id="name2"></h4>
+        </div>
+        <div class="latlong2">
+          <div class="lat2">
+            <h4>Latitude of Time Zone:</h4>
+            <h4 id="lat2"></h4>
+          </div>
+          <div class="long2">
+            <h4>Longitude of Time Zone:</h4>
+            <h4 id="long2"></h4>
+          </div>
+        </div>
+        <div class="std2">
+          <h4>Offset STD:</h4>
+          <h4 id="std2"></h4>
+        </div>
+        <div class="stdsec2">
+          <h4>Offset STD seconds:</h4>
+          <h4 id="stdsec2"></h4>
+        </div>
+        <div class="dst2">
+          <h4>Offset DST:</h4>
+          <h4 id="dst2"></h4>
+        </div>
+        <div class="dstsec2">
+          <h4>Offset DST seconds:</h4>
+          <h4 id="dstsec2"></h4>
+        </div>
+        <div class="country2">
+          <h4>Country:</h4>
+          <h4 id="country2"></h4>
+        </div>
+        <div class="postcode2">
+          <h4>State Code (post code not available in api):</h4>
+          <h4 id="postcode2"></h4>
+        </div>
+        <div class="city2">
+          <h4>City:</h4>
+          <h4 id="city2"></h4>
+        </div>
+      </div>
+      <p class="error" id="error">
+        Entered address details not found! Please write diffferent Address.
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
